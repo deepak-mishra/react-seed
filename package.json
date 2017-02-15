@@ -1,0 +1,52 @@
+{
+  "name": "react-app",
+  "version": "1.0.0",
+  "description": "React App ",
+  "main": "app.js",
+  "scripts": {
+    "prestart": "webpack -d",
+    "start": "node app.js",
+    "build": "webpack -p",
+    "dev": "webpack -d --watch",
+    "test": "test index.jsx",
+    "translate": "babel-node scripts/translate.js",
+    "manage:translations": "node scripts/translation-runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "na"
+  },
+  "keywords": [
+    "React",
+    "Webpack"
+  ],
+  "author": "Deepak Mishra",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "body-parser": "^1.16.0",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "errorhandler": "^1.5.0",
+    "express": "^4.14.1",
+    "method-override": "^2.3.7",
+    "morgan": "^1.8.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-intl": "^2.2.3",
+    "react-router": "^3.0.2",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-plugin-react-intl": "^2.3.1",
+    "css-loader": "^0.26.1",
+    "html-loader": "^0.4.4",
+    "node-sass": "^4.5.0",
+    "react-intl-translations-manager": "^4.0.1",
+    "sass-loader": "^5.0.1",
+    "style-loader": "^0.13.1"
+  }
+}
